@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.INFO)
 bot = Bot(token=os.getenv('BOT_TOKEN'))
 dp = Dispatcher()
 
-def get_weather():
+def get_weather() -> Model:
     return pywttr.get_weather('Saint-Petersburg', pywttr.Language.RU)
 
 def get_weather_text(weather: Model) -> str:
