@@ -1,6 +1,6 @@
 FROM python:latest
 
-RUN pip install --no-cache-dir pywttr asyncio logging aiogram
+RUN pip install --no-cache-dir pywttr asyncio logging aiogram python-dotenv
 
 WORKDIR /app
 
