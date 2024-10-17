@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  python-app:
+    build: .
+    container_name: tgbot
+    image: tgbot_image
+    volumes:
+      - "./:/app"
+    command: python3 main.py
